@@ -287,6 +287,16 @@ from patchai import print_diff
 print_diff(editor.get_original(), editor.get_current(), style="side-by-side")
 ```
 
+## 💬 Interactive Jupyter Editor (Widget UI)
+PatchAI also includes a fully interactive **Jupyter/Colab editor** — a beautiful, two-panel interface that lets you edit JSON or YAML files using natural language instructions, with live diffs and undo support.
+
+```python
+from patchai.jupyter import create_jupyter_editor
+
+# Launch interactive editor
+create_jupyter_editor("data.json", image_path="document.jpg")
+```
+
 ## 🛡️ API Reference
 
 ### PatchAI
