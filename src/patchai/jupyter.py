@@ -43,7 +43,7 @@ class JupyterEditor:
                 "Install with: pip install patchai[jupyter]"
             )
         
-        self.editor = PatchAI(data, format, image_path, api_key)
+        self.editor = PatchAI(data, format=format, image_path=image_path, api_key=api_key)
         self.image_path = Path(image_path) if image_path else None
         
         # Create UI components
