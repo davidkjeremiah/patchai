@@ -40,7 +40,7 @@ def generate_unified_diff(original: Dict, modified: Dict, format: str = "json") 
     return ''.join(diff)
 
 
-def print_diff(original: Dict, modified: Dict, format: str = "json", style: str = "unified"):
+def print_diff(original: Dict, modified: Dict, format: str = "json", style: str = "unified", console: Console = None):
     """
     Print colored diff to console.
     
@@ -50,7 +50,7 @@ def print_diff(original: Dict, modified: Dict, format: str = "json", style: str 
         format: Data format ('json' or 'yaml')
         style: Diff style ('unified' or 'side-by-side')
     """
-    console = Console()
+    console = console or Console()
     
     if style == "unified":
         _print_unified_diff(console, original, modified, format)
