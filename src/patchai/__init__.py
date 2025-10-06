@@ -26,7 +26,7 @@ Jupyter notebook UI:
 from .editor import PatchAI
 from .diff import print_diff, generate_unified_diff, print_summary
 
-__version__ = "0.1.0"
+__version__ = "0.1.5"
 __all__ = ["PatchAI", "print_diff", "generate_unified_diff", "print_summary"]
 
 # Jupyter UI is optional - only import if requested
